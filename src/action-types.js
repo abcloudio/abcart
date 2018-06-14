@@ -1,0 +1,12 @@
+export const CALCULATE_SHIPPING_METHODS = "calculate-shipping-methods";
+export const CHOOSE_SHIPPING_METHOD = "choose-shipping-method";
+export const ERROR = "ERROR";
+export const GET_CART = "get-cart";
+export const NEXT_STATE = "NEXT_STATE";
+export const PENDING_REQUEST = "PENDING_REQUEST";
+export const STRIPE_PAY_FOR_ORDER = "stripe-pay-for-order";
+export const STRIPE_SUBSCRIPTION = "stripe-subscription";
+export const SAVE_FORM = "save-form";
+export const UPDATE_ADDRESS = "update-address";
+export const UPDATE_CART_ITEM = "update-cart-item";
+export const UPDATE_PAYMENT_METHOD = "update-payment-method";

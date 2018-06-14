@@ -1,0 +1,25 @@
+{
+    "name": "abcart",
+    "version": "1.0.0-alpha.1",
+    "description": "",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "TEST=true CART_API_URL=http://api.mock jest --watch --verbose"
+    },
+    "author": "Digital Optimization Group LLC",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.0.0-beta.46",
+        "@babel/plugin-proposal-export-default-from": "^7.0.0-beta.46",
+        "@babel/preset-env": "^7.0.0-beta.42",
+        "babel-core": "^7.0.0-bridge.0",
+        "babel-jest": "^22.4.3",
+        "dotenv-webpack": "^1.5.5",
+        "jest": "^22.4.3",
+        "mock-xmlhttprequest": "^1.2.0",
+        "regenerator-runtime": "^0.11.1"
+    },
+    "dependencies": {
+        "xhr-mock": "^2.3.2"
+    }
+}
