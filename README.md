@@ -1,6 +1,6 @@
 ### abcart
 
-This repository holds the `abcart` javascript SDK. It is build to work with the abcart service as provided by abcart.io.
+This repository holds the `abcart` javascript SDK. It is build to work with the abcart service as provided by [abcart.io](https://www.abcart.io).
 
 Currently this library is primarily being used as a lower level provider for the [abcart-react](https://github.com/abcloudio/abcart-react) library. That said, this library may be used directly.
 
@@ -22,14 +22,17 @@ const { store, actions, connect } = abCloudCart({
 // activate the store, later you may call subscription.unsubscribe() to clean up the store
 const subscription = connect();
 
-// once the store has been activated you can subscribe to state changes, the store is a "HOT" rxjs observable. You can subscribe and unsubscribe multiple times without losing the underlying connection.
+// once the store has been activated you can subscribe to state changes, the store
+// is a "HOT" rxjs observable. You can subscribe and unsubscribe multiple times
+// without losing the underlying connection.
 const storeSubscription = store.subscribe({
     next: state => {
         console.log(state);
     }
 });
 
-// You can submit actions to the server by calling any of these actions with the given payload, see src/actions.js for function signatures
+// You can submit actions to the server by calling any of these actions
+// with the given payload, see src/actions.js for function signatures
 const {
     calculateShippingMethods,
     chooseShippingMethod,
