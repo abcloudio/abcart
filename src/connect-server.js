@@ -23,7 +23,7 @@ import reducer from "./reducer";
 // publishing to npm
 const CART_API_URL = "https://api.abcart.io";
 
-export default ({ appId, apikey, token }) => {
+export default ({ apikey, token }) => {
     // create subject to stream actions to the server
     const actions$ = new Subject();
 
