@@ -14,7 +14,7 @@ export default (state, action) => {
                 ...(state.stripeSubscription &&
                 // this indicates that we have added a new subscription since the last state
                 // change
-                state.subscriptions.length < action.payload.subscriptions
+                state.subscriptions.length < action.payload.subscriptions.length
                     ? {
                           stripeSubscription: {
                               status: "success"
